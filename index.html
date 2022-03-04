@@ -1988,5 +1988,50 @@
 				}, 400);
 			});
 		</script>
+		<script>
+			(function (win) {
+				win.egProps = {
+					modal: {
+						campaigns: [
+							{
+								campaignId: "387976",
+								elementSelector: "#donate-cta",
+								urlParams: readURLParams()
+							}
+						]
+					}
+				};
+
+				win.document.body.appendChild(makeEGScript());
+
+				// Create the embed script
+				function makeEGScript() {
+					var egScript = win.document.createElement("script");
+					egScript.setAttribute("type", "text/javascript");
+					egScript.setAttribute("async", "true");
+					egScript.setAttribute(
+						"src",
+						"https://sdk.classy.org/embedded-giving.js"
+					);
+
+					return egScript;
+				}
+
+				// Read URL parameters and pass them to the donation page in the embedded modal
+				function readURLParams() {
+					var searchParams = new URLSearchParams(location.search);
+
+					// Add or remove url parameters that you want to pass over to the embed modal.
+					var validUrlParams = ["c_src", "c_src2"];
+
+					return validUrlParams.reduce(function (urlParamsSoFar, validKey) {
+						var value = searchParams.get(validKey);
+						return value === null
+							? urlParamsSoFar
+							: { ...urlParamsSoFar, [validKey]: value };
+					}, {});
+				}
+			})(window);
+		</script>
 	</body>
 </html>
