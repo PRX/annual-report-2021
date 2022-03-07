@@ -5,7 +5,7 @@
 }
 :root {
 	font-size: 1.25vw;
-	
+
 	--gutter_x: 8rem;
 	--gutter_y: 8rem;
 	--brand_color: #FF9600;
@@ -15,7 +15,7 @@
 @media only screen and (max-width: 1100px) {
 	:root {
 		font-size: 1.5vw;
-		
+
 		--gutter_x: 4rem;
 		--gutter_y: 5rem;
 	}
@@ -23,7 +23,7 @@
 @media only screen and (max-width: 700px) {
 	:root {
 		font-size: 14px;
-		
+
 		--gutter_x: 3rem;
 		--gutter_y: 4rem;
 	}
@@ -169,7 +169,7 @@ body {
 	#mobile-header {
 		display: flex;
 		align-items: center;
-	}	
+	}
 	#mobile-header .logo { max-width: 100px; }
 }
 
@@ -298,7 +298,7 @@ body {
 	letter-spacing: .1em;
 	background: var(--brand_color);
 	border-top-right-radius: 1.5rem;
-	border-bottom-right-radius: 1.5rem;	
+	border-bottom-right-radius: 1.5rem;
 	transition: all .2s ease-in-out;
 }
 #donate-cta:hover {
@@ -369,7 +369,7 @@ body {
 .hero .center { margin: auto 0; }
 
 	/* --- Backgrounds --- */
-	
+
 	#page-welcome .hero .bg {
 		background-image: url(../images/hero-welcome.jpg);
 		background-position: center;
@@ -383,7 +383,7 @@ body {
 		background-position: top center;
 	}
 	#page-financials .hero .bg { background-image: url(../images/hero-financials.jpg); }
-	
+
 @media only screen and (max-width: 900px) {
 	#page-welcome .hero .body, .page:not(#page-welcome) .hero .body  { padding: 0; }
 	.hero {
@@ -433,8 +433,8 @@ body {
 	letter-spacing: .19em;
 }
 #page-welcome .audio {
-	margin-top: auto; 
-	margin-bottom: 3vw;	
+	margin-top: auto;
+	margin-bottom: 3vw;
 }
 @media only screen and (max-width: 700px) {
 	#page-welcome .hero .expand img { width: 70vw; }
@@ -443,7 +443,7 @@ body {
 }
 
 	/* --- Welcome Letter --- */
-	
+
 	#welcome-letter {
 		position: relative;
 		display: flex;
@@ -556,16 +556,16 @@ body {
 	}
 	@media only screen and (max-width: 600px) {
 		#welcome-letter:before, #welcome-letter .welcome { display: none; }
-		#welcome-letter .letter-wrap { 
+		#welcome-letter .letter-wrap {
 			flex: 0 0 100%;
 			padding: var(--gutter_y) var(--gutter_x);
 			box-sizing: border-box;
 		}
 	}
-	
-	
+
+
 	/* --- Diverse Portfolio --- */
-	
+
 	#welcome-portfolio {
 		display: flex;
 		padding: var(--gutter_y) var(--gutter_x);
@@ -620,15 +620,15 @@ body {
 		}
 	}
 	@media only screen and (max-width: 550px) {
-		#welcome-portfolio { 
+		#welcome-portfolio {
 			background-size: auto;
 			background-attachment: scroll;
 		}
 	}
-		
-	
+
+
 /* --- Stats --- */
-	
+
 #pages section.stats {
 	position: relative;
 	color: #FFF;
@@ -690,7 +690,7 @@ body {
 	#pages section.stats p strong { font-size: 6rem; }
 }
 
-	
+
 /* --- Dark BG Text Block --- */
 
 #pages section.dark-text-block {
@@ -752,7 +752,7 @@ body {
 	}
 	#pages section.dark-text-block p { flex: 0 0 100%; }
 }
-	
+
 
 /* --- Light Text Block --- */
 
@@ -776,10 +776,10 @@ body {
 		width: 100%;
 		padding: var(--gutter_y) var(--gutter_x);
 		box-sizing: border-box;
-	}	
+	}
 }
 
-	
+
 /* --- Light Text Block w/ Mark --- */
 
 #pages section.light-text-with-mark {
@@ -810,7 +810,7 @@ body {
 		width: 100%;
 		padding: var(--gutter_y) var(--gutter_x);
 		box-sizing: border-box;
-	}	
+	}
 	#pages section.light-text-with-mark.alt {
 		padding: var(--gutter_y) var(--gutter_x);
 		background-position: 110% 70%;
@@ -886,7 +886,7 @@ body {
 	background: #000;
 }
 #pages section.video .wrap {
-	position: relative;	
+	position: relative;
 	width: 100%;
 	height: 0px;
 	padding-top: 56.25%;
@@ -947,7 +947,7 @@ body {
 }
 @media only screen and (max-width: 550px) {
 	#pages section.quote .author {
-		flex-direction: column;	
+		flex-direction: column;
 		align-items: flex-start;
 	}
 	#pages section.quote .author img { margin: 0 0 2rem 0; }
@@ -1100,7 +1100,7 @@ body {
 @media only screen and (max-width: 1100px) {
 	#pages section.staggered.detailed .block p {
 		max-width: none;
-		margin-bottom: 0; 
+		margin-bottom: 0;
 	}
 	#pages section.staggered .block p, #pages section.staggered .block:nth-child(odd) p { margin-bottom: 0; }
 	#pages section.staggered .block:nth-child(odd) {
@@ -1210,7 +1210,7 @@ body {
 	#pages section.deepening .content { flex: 0 0 100%; }
 	#pages section.deepening img {
 		width: 100%;
-		margin-top: 2rem;	
+		margin-top: 2rem;
 	}
 }
 
@@ -1274,7 +1274,7 @@ body {
 @media only screen and (max-width: 700px) {
 	#pages section.faxina .circles, #pages section.deepening .circles { display: none; }
 	#pages section.faxina { flex-wrap: wrap; }
-	#pages section.faxina .content { flex: 0 0 100%; }		
+	#pages section.faxina .content { flex: 0 0 100%; }
 	#pages section.faxina img {
 		width: 100%;
 		margin-top: 2rem;
@@ -1308,7 +1308,7 @@ body {
 	z-index: 1;
 	margin-bottom: 1em;
 	text-transform: uppercase;
-	font-size: 2rem;
+	font-size: 2rem;z
 	font-weight: 800;
 	line-height: 1.4;
 	flex: 0 0 100%;
@@ -1337,10 +1337,10 @@ body {
 	white-space: nowrap;
 }
 @media only screen and (max-width: 900px) {
-	#pages section.donors .group { flex: 0 0 50%; }	
+	#pages section.donors .group { flex: 0 0 50%; }
 }
 @media only screen and (max-width: 650px) {
-	#pages section.donors .group, #pages section.donors.small .group { flex: 0 0 100%; }	
+	#pages section.donors .group, #pages section.donors.small .group { flex: 0 0 100%; }
 }
 
 
@@ -1381,7 +1381,7 @@ body {
 	transform: scale3d(1.1, 1.1, 1);
 }
 @media only screen and (max-width: 900px) {
-	#pages a.donate p { padding: 0; }	
+	#pages a.donate p { padding: 0; }
 }
 /*#pages a.donate img {
 	width: 5.5rem;
@@ -1395,13 +1395,13 @@ body {
 @keyframes beat {
 	to { transform: scale(1.15); }
 }*/
-	
+
 
 /* --- Awards and Press --- */
 
 #pages section.word-cloud {
 	padding: var(--gutter_y) var(--gutter_x);
-	background: #000;	
+	background: #000;
 }
 #pages section.word-cloud.light { background: #FFF; }
 #pages section.word-cloud h2 {
@@ -1447,8 +1447,8 @@ body {
 @media only screen and (max-width: 700px) {
 	#pages section.charts .chart-wrap, #pages section.charts .chart-wrap.expenses {
 		width: 100%;
-		margin: 0;	
-	}	
+		margin: 0;
+	}
 }
 
 
@@ -1492,7 +1492,7 @@ body {
 #pages section.tables th:nth-child(2), #pages section.tables th:nth-child(3),
 #pages section.tables tr.spaced td:nth-child(2), #pages section.tables tr.spaced td:nth-child(3),
 #pages section.tables td:nth-child(2), #pages section.tables td:nth-child(3) { text-align: right; }
-	
+
 /* --- Next Section --- */
 
 #pages section.nav {
@@ -1571,7 +1571,7 @@ body {
 	#page-press section.nav { background-image: url(../images/hero-financials.jpg); }
 	#page-financials section.nav { background-image: url(../images/hero-welcome.jpg); }
 
-	
+
 /* --- Footer --- */
 
 footer {
@@ -1624,7 +1624,7 @@ footer .copyright a, footer .copyright a:active, footer .copyright a:visited {
 footer .copyright a img { width: 100%; }
 footer .copyright a:hover { text-decoration: none; }
 @media only screen and (max-width: 1100px) {
-	footer .copyright { flex-direction: column; }	
+	footer .copyright { flex-direction: column; }
 	footer .copyright p { margin-bottom: 1rem; }
 }
 @media only screen and (max-width: 600px) {
@@ -1678,7 +1678,7 @@ footer .copyright a:hover { text-decoration: none; }
 	.audioplayer {
 		width: 80%;
 		margin: 2rem 10%;
-	}	
+	}
 }
 .audioplayer-playpause {
     display: flex;
