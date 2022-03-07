@@ -1564,59 +1564,59 @@
 							const chart_colors = ['#FF9600', '#0089BD', '#64C9D3', '#FFF', '#212121'];
 							const chart_options = {
 								aspectRatio: 1.25,
-							    plugins: {
-								    tooltip: {
-						                callbacks: {
-						                    label: function(context) {
+									plugins: {
+										tooltip: {
+														callbacks: {
+																label: function(context) {
 												return ' $' + context.parsed.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
-						                    }
-						                },
-						                bodyFont: {
-							                size: tip_font
-						                }
-						            },
-								    legend: {
-									    position: 'bottom',
-									    labels: {
-										    color: '#FFF',
-										    font: function(context) {
-											    var legend_font = window.innerWidth / 100;
-											    if (legend_font < 16) legend_font = 16;
-								                return {
-								                    size: legend_font
-								                };
-								            },
-										    padding: 15,
-										    boxWidth: 20
-									    },
-									    title: {
-										    text: 'PRX',
-										    display: true,
-										    color: '#000',
-										    font: {
-											    size: 24
-										    }
-									    }
-								    }
-							    }
-						    };
+																}
+														},
+														bodyFont: {
+															size: tip_font
+														}
+												},
+										legend: {
+											position: 'bottom',
+											labels: {
+												color: '#FFF',
+												font: function(context) {
+													var legend_font = window.innerWidth / 100;
+													if (legend_font < 16) legend_font = 16;
+																return {
+																		size: legend_font
+																};
+														},
+												padding: 15,
+												boxWidth: 20
+											},
+											title: {
+												text: 'PRX',
+												display: true,
+												color: '#000',
+												font: {
+													size: 24
+												}
+											}
+										}
+									}
+								};
 
 
 
-						    /* --- Operating Revenue --- */
+								/* --- Operating Revenue --- */
 
 							const operating_context = document.getElementById('operating-revenue');
 							var operating_config = {
-							    type: 'pie',
-							    data: {
-							        labels: ['Underwriting', 'Operating Activities', 'Grants', 'Individual Gifts', 'Other'],
-							        datasets: [{
-							            data: [0, 0, 0, 0, 0],
-							            backgroundColor: chart_colors,
-							            borderWidth: 0
-							        }]
-							    },
-							    options: chart_options
+									type: 'pie',
+									data: {
+											labels: ['Underwriting', 'Operating Activities', 'Grants', 'Individual Gifts', 'Other'],
+											datasets: [{
+													data: [0, 0, 0, 0, 0],
+													backgroundColor: chart_colors,
+													borderWidth: 0
+											}]
+									},
+									options: chart_options
 							};
 							const operating_revenue = new Chart(operating_context, operating_config);
 
@@ -1624,16 +1624,16 @@
 
 							const expenses_context = document.getElementById('expenses');
 							var expenses_config = {
-							    type: 'pie',
-							    data: {
-							        labels: ['Support for Creators', 'Content Production and Distribution', 'Administrative', 'Fundraising'],
-							        datasets: [{
-							            data: [0, 0, 0, 0],
-							            backgroundColor: chart_colors,
-							            borderWidth: 0
-							        }]
-							    },
-							    options: chart_options
+									type: 'pie',
+									data: {
+											labels: ['Support for Creators', 'Content Production and Distribution', 'Administrative', 'Fundraising'],
+											datasets: [{
+													data: [0, 0, 0, 0],
+													backgroundColor: chart_colors,
+													borderWidth: 0
+											}]
+									},
+									options: chart_options
 							};
 							const expenses = new Chart(expenses_context, expenses_config);
 						</script>
