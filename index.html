@@ -4,7 +4,7 @@
 		<title>PRX | Expand the Story</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/prx.css">
+		<link rel="stylesheet" href="css/prx.css?2022-03-03">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,300;1,400;1,800&display=swap" rel="stylesheet">
@@ -1581,21 +1581,25 @@
 												color: '#FFF',
 												font: function(context) {
 													var legend_font = window.innerWidth / 100;
-													if (legend_font < 16) legend_font = 16;
+													if (legend_font < 12) legend_font = 12;
 																return {
 																		size: legend_font
 																};
 														},
-												padding: 15,
+												padding: 10,
 												boxWidth: 20
 											},
 											title: {
 												text: 'PRX',
 												display: true,
 												color: '#000',
-												font: {
-													size: 24
-												}
+												font: function(context) {
+													var legend_font = window.innerWidth / 100;
+													if (legend_font < 12) legend_font = 12;
+																return {
+																		size: legend_font
+																};
+														}
 											}
 										}
 									}
