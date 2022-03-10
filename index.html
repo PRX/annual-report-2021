@@ -1938,7 +1938,7 @@
 						if (!$(this).data('loaded') && $(this).closest('.page').hasClass('open')) {
 							if ($(this).prop('tagName') == 'CANVAS' && $(this).data('reveal-progress') >= .75) { // financial graph animations
 								if ($(this).attr('id') == 'operating-revenue') {
-									operating_revenue.data.datasets[0].data = [22675000, 22675000, 4421000, 2261000, 4716000];
+									operating_revenue.data.datasets[0].data = [22675000, 12186000, 4421000, 2261000, 4716000];
 									operating_revenue.update();
 									$(this).data('loaded', true);
 								} else if ($(this).attr('id') == 'expenses') {
